@@ -1,0 +1,44 @@
+body{
+	padding: 100px;
+}
+
+.login-form{
+	padding: 40px;
+	margin-top: 50px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px gray;
+}
+
+
+/* To hide the transaction area initially */
+#transaction-area{
+	display: none;
+}
+
+#currentBalance{
+	display: inline;
+	width: 90%;
+	outline: none;
+	border: none;
+	background-color: orange;
+	color: white;
+	font-weight: bold;
+}
+.deposit{
+	background-color: slateblue;
+}
+
+.withdraw{
+	background-color: lightsalmon;
+}
+
+.balance{
+	background-color: orange;
+}
+
+.status{
+	margin: 0px 20px;
+	color: white;
+	border-radius: 10px;
+	padding: 20px;
+}

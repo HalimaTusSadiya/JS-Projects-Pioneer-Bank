@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap Link -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<!-- CSS style link -->
+	<link rel="stylesheet" href="style.css">
+	<title>Pioneer Bank</title>
+</head>
+<body>
+
+	<!-- Section for login system page -->
+
+	<div id="login-area">
+		<h1 class="text-center">Welcome To Pioneer Bank</h1>
+		<div class="login-form" id="loginForm">
+			<h4>Login</h4>
+			<input type="email" name="username" class="form-control" placeholder="Email" id="username">
+			<br>
+			<input type="password" name="password" 
+			class="form-control" placeholder="Password" id="password">
+			<br>
+			<button id="login" class="btn btn-success">Enter</button>
+		</div>
+	</div>
+
+	<!-- Section to display for the successful login -->
+
+	<div id="transaction-area">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="deposit status">
+					<h5>Deposit</h5>
+					<h2>$ <span id="currentDeposit">00</span></h2>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="withdraw status">
+					<h5>Withdraw</h5>
+					<h2>$ <span id="currentWithdraw">00</span></h2>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="balance status">
+					<h5>Balance</h5>
+					<h2>$ <span id="currentBalance">1240</span></h2>
+				</div>
+			</div>
+		</div>
+
+		<!-- Section for add Deposit & Withdraw amount -->
+
+		<div class="row">
+			<div class="col-md-6 deposit-withdraw-section">
+				<div class="login-form">
+					<h4>Deposit</h4>
+					<input id="depositAmount" class="form-control" type="text" placeholder="$ amount you want to deposit">
+					<br>
+					<button class="btn btn-success" id="addDeposit">Deposit</button>
+				</div>
+
+			</div>
+			<div class="col-md-6 deposit-withdraw-section">
+				<div class="login-form">
+					<h4>Withdraw</h4>
+					<input id="withdrawAmount" type="text" class="form-control" placeholder="$ amount you want to withdraw">
+					<br>
+					<button id="addWithdraw" class="btn btn-success">Withdraw</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+<!-- JS code starts here -->
+
+	<script src="script.js"></script>
+</body>
+</html>
